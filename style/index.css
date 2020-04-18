@@ -64,7 +64,6 @@ h1, h2, h3, h4, h5 {
 }
 
 header {
-    width: 42%;
     margin: 0 auto;
     display: flex;
     align-items: baseline;
@@ -210,4 +209,85 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+@media (max-width: 800px) {
+
+    .container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .container {
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        border-top: 1px solid black;
+        padding-top: 20px;
+    }
+
+    header nav {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    header nav a {
+        color: lightgray;
+        border: 1px solid lightgray;
+        width: 60%;
+        text-align: center;
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+    header nav .current {
+        background-color: lightgray;
+        color: gray;
+        border: 1px solid gray;
+    }
+
+    .top-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .top-content .text-container {
+        width: 90%;
+    }
+
+    .top-content .text-container p {
+        color: gray;
+        font-size: 1rem;
+    }
+
+    .top-content .text-container h2 {
+        margin-bottom: 5px;
+    }
+
+    .middle-content .boxes {
+        width: 50%;
+        margin: 0 auto;
+    }
+    
+    .middle-content .boxes .box {
+        width: 100px;
+        flex-direction: column;
+    }
+
+    .middle-content .boxes .box.box5,
+    .middle-content .boxes .box.box6,
+    .middle-content .boxes .box.box7,
+    .middle-content .boxes .box.box8,
+    .middle-content .boxes .box.box9,
+    .middle-content .boxes .box.box10,
+    .bottom-content,
+    footer {
+        display: none;
+    }
+
 }
