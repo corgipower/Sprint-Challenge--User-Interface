@@ -64,7 +64,7 @@ h1, h2, h3, h4, h5 {
 }
 
 header {
-    width: 800px;
+    width: 42%;
     margin: 0 auto;
     display: flex;
     align-items: baseline;
@@ -89,11 +89,12 @@ p {
 }
 
 .container {
-    width: 800px;
+    width: 42%;
     margin: 0 auto;
 }
 
 .top-image {
+    width: 100%;
     margin-bottom: 20px;
 }
 
@@ -203,7 +204,7 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 footer nav a {
