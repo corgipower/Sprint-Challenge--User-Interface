@@ -249,6 +249,7 @@ footer nav a {
         background-color: lightgray;
         color: gray;
         border: 1px solid gray;
+        font-weight: bold;
     }
 
     .top-content {
